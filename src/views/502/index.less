@@ -1,0 +1,29 @@
+.role {
+  text-align: center;
+  user-select: none;
+  padding-top: 10%;
+  position: relative;
+  img {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .text {
+    position: absolute;
+    left: 50%;
+    top: calc(10% + 150px);
+    padding: @padding-top;
+    font-size: 22px;
+    color: #fff;
+    animation: scal 3s ease-in-out infinite;
+  }
+}
+
+@keyframes scal {
+  0%, 100% {
+    color: @font-color;
+  }
+  50% {
+    color: @font-color-middle;
+    transform: scale(1.2);
+  }
+}

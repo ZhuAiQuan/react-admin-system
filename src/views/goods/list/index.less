@@ -1,0 +1,111 @@
+.list-ctx {
+  background-color: #fff;
+  padding: @padding-space;
+  height: 100%;
+  // overflow: hidden;
+  overflow-y: auto;
+  .goods-list-header {
+    display: flex;
+    justify-content: space-between;
+    .btn-group {
+      // width: 120px;
+      // text-align: right;
+    }
+    .search-group {
+      width: calc(100% - 200px);
+      display: flex;
+      flex-wrap: wrap;
+      
+      .search-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        margin-bottom: 10px;
+        align-items: center;
+        &-title {
+          width: 70px;
+          font-size: 12px;
+          text-align: right;
+          &::after {
+            content: '：';
+          }
+        }
+        .custom-input {
+          width: calc(100% - 70px);
+        }
+      }
+    }
+  }
+  .add {
+    padding: @padding-top 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .actions {
+    color: #1890ff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .ant-table-wrapper {
+    padding: 0 0 @padding-space;
+    .ant-table-body {
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: @primary-color;
+      }
+    }
+  }
+  .gooods-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .info {
+      min-height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: @padding-top;
+      width: calc(100% - 100px);
+      .name {
+        color: @font-color;
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .code {
+        color: @font-color-low;
+        font-size: 12px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .pic {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .saler-price {
+    &::before {
+      content: "￥";
+    }
+  }
+  .create-time {}
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: @primary-color;
+  }
+}

@@ -1,0 +1,67 @@
+.video-context {
+  background-color: @background-color;
+  padding: @padding-top;
+  padding-bottom: 0;
+  .footer {
+    text-align: center;
+    padding: @padding-space 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #E8E8E8;
+      transform: scaleY(.5);
+    }
+    &::before {
+      content: '* 清晰度不低于1080P，大小不超过500M';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: @font-color-middle;
+    }
+  }
+  .video {
+    height: calc(100% - 64px);
+    padding: @padding-top;
+    position: relative;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      .play {
+        opacity: 1;
+        transition: all .3s ease-out .2s;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: @mask-bg-color;
+        z-index: 9;
+        transition: all .25s ease-out;
+      }
+    }
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      opacity: 0;
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+        transition: all .25s ease-out;
+      }
+    }
+  }
+}

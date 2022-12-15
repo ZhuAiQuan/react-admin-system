@@ -1,0 +1,236 @@
+.category {
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  .left-tree {
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    padding: @padding-space;
+
+    .ant-tree-title {
+      .title {
+        span {
+          font-size: 14px;
+        }
+
+        .anticon {
+          // display: none;
+          opacity: 0;
+          transition: all .25s ease;
+        }
+      }
+
+      &:hover {
+        .anticon {
+          // display: unset;
+          opacity: 1;
+          transition: all .3s linear;
+        }
+      }
+
+      .selected-title {
+        color: @primary-color;
+
+        .anticon {
+          // display: unset;
+          opacity: 1;
+          transition: all .25s linear;
+        }
+      }
+    }
+
+    .ant-tree-node-content-wrapper-open {
+      .open-title {
+        // background-color: @border-color;
+        color: @primary-color;
+        .anticon {
+          // display: unset;
+          opacity: 1;
+          transition: all .25s linear;
+        }
+      }
+
+    }
+
+
+
+    .actions {
+      display: flex;
+
+      .ant-input-group-wrapper {
+        width: auto;
+        margin-right: 8px;
+      }
+    }
+
+    .ant-tree .ant-tree-node-content-wrapper:hover {
+      background-color: unset;
+    }
+  }
+
+  .middle-line {
+    height: 100%;
+    width: 1px;
+    background-color: @border-color;
+    transform: scaleX(.5);
+  }
+
+  .right-ctx {
+    width: calc(100% - 301px);
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 10px;
+
+    .category-head {
+      .ant-tabs-nav {
+        margin-bottom: 0;
+      }
+    }
+
+    .category-ctx {
+
+      // padding: @padding-space 0;
+      .goods-list {
+        padding-top: @padding-space;
+
+        .featur {
+          display: flex;
+          justify-content: right;
+          margin-bottom: @padding-space;
+        }
+      }
+
+      .category-setting {
+        padding: 20px 0;
+        position: relative;
+        height: 100%;
+
+        .tips {
+          font-size: 12px;
+          color: @font-color-low;
+          padding: 6px 0;
+        }
+
+        .upload-ctx {
+          padding: @padding-space 0;
+
+          .upload-descript {
+            color: @font-color-low;
+          }
+        }
+
+        .footer {
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: @padding-space 0;
+        }
+      }
+
+      .category-attr {
+        padding: @padding-space 0;
+
+        .add {
+          margin-bottom: @padding-space;
+        }
+
+      }
+
+      .nodes {
+        font-size: 12px;
+        padding: @padding-space;
+        padding-bottom: 0;
+        color: @font-color-low;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: @primary-color;
+      }
+    }
+
+    .form-sub-btn {
+      .ant-form-item-control-input-content {
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+.ant-drawer-footer {
+  text-align: right;
+}
+
+.input-value {
+  padding-bottom: @padding-space;
+}
+
+.site-tag-plus {
+  background: #fff;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.edit-tag {
+  user-select: none;
+  margin-bottom: 8px;
+}
+
+.tag-input {
+  width: 78px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.gooods-info {
+  display: flex;
+  flex-wrap: wrap;
+
+  .info {
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: @padding-top;
+    width: calc(100% - 100px);
+
+    .name {
+      color: @font-color;
+      width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .code {
+      color: @font-color-low;
+      font-size: 12px;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .pic {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

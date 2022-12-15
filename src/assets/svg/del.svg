@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <g id="后台规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="基础规范" transform="translate(-1080.000000, -1381.000000)">
+            <g id="发布产品-锚点" transform="translate(240.000000, 1030.000000)">
+                <g id="商品规格名" transform="translate(201.000000, 331.000000)">
+                    <g id="icon/后台/20/垃圾桶" transform="translate(639.000000, 20.000000)">
+                        <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+                        <g id="编组-2" transform="translate(2.000000, 3.000000)">
+                            <path d="M14.5,2 L14.5,16 L1.5,16 L1.5,2 L14.5,2 Z M13.3181818,3.16666667 L2.68181818,3.16666667 L2.68181818,14.8333333 L13.3181818,14.8333333 L13.3181818,3.16666667 Z" id="矩形" fill="#231815" fill-rule="nonzero"></path>
+                            <path d="" id="形状结合" stroke="#231815" transform="translate(8.000000, 9.000000) rotate(-315.000000) translate(-8.000000, -9.000000) "></path>
+                            <rect id="矩形" fill="#231815" x="0" y="2" width="16" height="1"></rect>
+                            <rect id="矩形备份" fill="#231815" x="4.5" y="0" width="7" height="1"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

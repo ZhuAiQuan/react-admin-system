@@ -1,0 +1,25 @@
+.home-page {
+  height: 100%;
+  background-color: @background-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  &>div {
+    padding-bottom: 20%;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #231815;
+    line-height: 24px;
+    &::after {
+      content: '欢迎使用罗马仕官网工作台';
+    }
+  }
+}
